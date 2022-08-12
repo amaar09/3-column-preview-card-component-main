@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    font-family:
+        /* "Big Shoulders Display"*/
+        "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+
+    /*to align the container*/
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    /* if there are contents within the div/container that has the curved
+     corners, you have to set overflow: hidden because otherwise the child div's 
+    overflow can give the impression that the border-radius isn't 
+    working.*/
+
+
+    display: flex;
+    flex-direction: row;
+    width: 999px;
+}
+
+main .sedans {
+    background: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+main .sedans h6 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+    font-family: "Big Shoulders Display";
+}
+
+main .sedans a {
+    text-decoration: none;
+    color: var(--Bright-orange);
+    background: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+
+    max-width: fit-content;
+    border: 2px solid wheat;
+    margin: 90px 0 25px 0;
+
+
+
+}
+
+main .sedans a:hover,
+a:active {
+    background-color: var(--Bright-orange);
+    color: white;
+}
+
+
+main .suv {
+    background: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+main .suv h6 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+    font-family: "Big Shoulders Display";
+}
+
+main .suv a {
+
+    text-decoration: none;
+    color: var(--Dark-cyan);
+    background: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+
+    max-width: fit-content;
+    border: 2px solid wheat;
+    margin: 90px 0 25px 0;
+}
+
+main .suv a:hover,
+a:active {
+    background-color: var(--Dark-cyan);
+    color: white;
+}
+
+
+main .luxury {
+    background: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+main .luxury h6 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+    font-family: "Big Shoulders Display";
+}
+
+main .luxury a {
+
+    text-decoration: none;
+    color: var(--Very-dark-cyan);
+    background: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+
+    max-width: fit-content;
+    border: 2px solid wheat;
+    margin: 90px 0 25px 0;
+}
+
+main .luxury a:hover,
+a:active {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+}
+
+
+main img {
+    width: 70px;
+}
+
+@media only screen and (max-width: 986px) {
+    body {
+        /* background-color: black; */
+    }
+
+    .container {
+        font-family: "Lexend Deca";
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 0;
+
+        /*to align the container*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        /* border: 2px solid red; */
+        border-radius: 0.5rem;
+        overflow: hidden;
+        /* if there are contents within the div/container that has the curved
+     corners, you have to set overflow: hidden because otherwise the child div's 
+    overflow can give the impression that the border-radius isn't 
+    working.*/
+
+
+        display: flex;
+        flex-direction: column;
+        width: 555px;
+        height: 9999px;
+        margin: 0;
+        padding: 0;
+    }
+
+    main .w {
+        max-height: 33.33%;
+        padding: 0 0 0 10px;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    main .w h6 {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0;
+        font-family: "Big Shoulders Display";
+        margin-top: 10px;
+    }
+
+    main .w span {
+        font-size: 15px;
+        line-height: 20px;
+       margin-top: 25px ;
+       display: inline-block;
+    }
+
+    main .w a {
+        text-decoration: none;
+        background: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 25px;
+        text-align: center;
+
+        max-width: fit-content;
+        border: 2px solid wheat;
+        margin-top: 10px;
+
+    }
+
+    main .sedans {
+        background: hsl(31, 77%, 52%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .sedans a {
+        color: var(--Bright-orange);
+    }
+
+    main .sedans a:hover,
+    a:active {
+        background-color: var(--Bright-orange);
+        color: white;
+    }
+
+
+    main .suv {
+        background: hsl(184, 100%, 22%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .suv a {
+        color: var(--Dark-cyan);
+
+    }
+
+    main .suv a:hover,
+    a:active {
+        background-color: var(--Dark-cyan);
+        color: white;
+    }
+
+
+    main .luxury {
+        background: hsl(179, 100%, 13%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .luxury a {
+
+        color: var(--Very-dark-cyan);
+
+    }
+
+    main .luxury a:hover,
+    a:active {
+        background-color: var(--Very-dark-cyan);
+        color: white;
+    }
+
+
+    main img {
+        width: 70px;
+    }
+
+}
+
+
+@media only screen and (max-width: 565px) {
+    body {
+        /* background-color: rgb(232, 23, 23); */
+    }
+
+    .container {
+        font-family: "Lexend Deca";
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 0;
+
+        /*to align the container*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    main {
+        /* border: 2px solid red; */
+        border-radius: 0.5rem;
+        overflow: hidden;
+        /* if there are contents within the div/container that has the curved
+     corners, you have to set overflow: hidden because otherwise the child div's 
+    overflow can give the impression that the border-radius isn't 
+    working.*/
+
+
+        display: flex;
+        flex-direction: column;
+        width: 365px;
+        /* height: 9999px; */
+        margin: 0;
+        padding: 0;
+    }
+
+    main .w {
+        max-height: 33.33%;
+        margin: 0;
+       
+        padding-left: 5px;
+        font-size: 13px;
+    }
+
+    main .w h6 {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0;
+        font-family: "Big Shoulders Display";
+        margin-top: 10px;
+    }
+
+    main .w span {
+        font-size: 15px;
+        line-height: 15px;
+       margin-top: 25px ;
+       display: inline-block;
+    }
+
+    main .w a {
+        text-decoration: none;
+        background: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 25px;
+        text-align: center;
+        max-width: fit-content;
+        border: 2px solid wheat;
+        margin-top: 10px;
+
+    }
+
+    main .sedans {
+        background: hsl(31, 77%, 52%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .sedans a {
+        color: var(--Bright-orange);
+    }
+
+    main .sedans a:hover,
+    a:active {
+        background-color: var(--Bright-orange);
+        color: white;
+    }
+
+
+    main .suv {
+        background: hsl(184, 100%, 22%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .suv a {
+        color: var(--Dark-cyan);
+
+    }
+
+    main .suv a:hover,
+    a:active {
+        background-color: var(--Dark-cyan);
+        color: white;
+    }
+
+
+    main .luxury {
+        background: hsl(179, 100%, 13%);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+
+    main .luxury a {
+
+        color: var(--Very-dark-cyan);
+
+    }
+
+    main .luxury a:hover,
+    a:active {
+        background-color: var(--Very-dark-cyan);
+        color: white;
+    }
+
+
+    main img {
+        width: 70px;
+    }
+
+}
